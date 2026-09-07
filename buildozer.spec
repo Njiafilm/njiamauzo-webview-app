@@ -1,5 +1,6 @@
 [app]
 title = NjiaMauzo Afrika
+icon.filename = %(source.dir)s/logo.png
 package.name = njiamauzoafrika
 package.domain = org.njiamauzo
 
