@@ -27,6 +27,12 @@ class NjiaMauzoApp(App):
             settings.setLoadWithOverviewMode(True)
             settings.setUseWideViewPort(True)
             settings.setDatabaseEnabled(True)
+            settings.setMixedContentMode(0)
+            settings.setCacheMode(-1)
+            settings.setUserAgentString(
+                "Mozilla/5.0 (Linux; Android 10; Mobile) AppleWebKit/537.36 "
+                "(KHTML, like Gecko) Chrome/120.0 Mobile Safari/537.36"
+            )
             webview.setWebViewClient(WebViewClient())
             webview.setWebChromeClient(WebChromeClient())
             webview.loadUrl("https://njiamauzo-afrika.onrender.com/")
