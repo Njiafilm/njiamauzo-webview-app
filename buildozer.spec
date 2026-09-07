@@ -1,27 +1,23 @@
 [app]
-title = NJIAFIX MOBILE
-package.name = njiafixmobile
-package.domain = org.njiafix
+title = NjiaMauzo Afrika
+package.name = njiamauzoafrika
+package.domain = org.njiamauzo
 
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
-version = 1.0
+version = 0.1
 
-requirements = python3,kivy,plyer
+requirements = python3,kivy==2.2.1,pyjnius==1.4.2
 
 orientation = portrait
 fullscreen = 0
 
-# Permissions this app actually uses:
-# INTERNET / ACCESS_NETWORK_STATE - for the real reachability check
-# WRITE_EXTERNAL_STORAGE (legacy, <=Android 9) - for "Hifadhi Ripoti"
-android.permissions = INTERNET,ACCESS_NETWORK_STATE,WRITE_EXTERNAL_STORAGE
-
+android.permissions = INTERNET
 android.api = 33
 android.minapi = 21
 android.ndk = 25b
-android.archs = arm64-v8a,armeabi-v7a
+android.archs = arm64-v8a
 
 [buildozer]
 log_level = 2
